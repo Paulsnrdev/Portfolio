@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Admin</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="dash">
+    <aside class="sidebar">
+        <div class="sidebar-label">Sections</div>
+        <div id="sectionNav" role="navigation" aria-label="Sections">
+            <button class="nav-item" data-section="navbar"><span class="icon">⚓</span>Navbar</button>
+            <button class="nav-item" data-section="hero"><span class="icon">🚀</span>Hero</button>
+            <button class="nav-item" data-section="expertise"><span class="icon">🛠️</span>Expertise</button>
+            <button class="nav-item" data-section="projects"><span class="icon">🗂️</span>Projects</button>
+            <button class="nav-item" data-section="testimonials"><span class="icon">💬</span>Testimonials</button>
+            <button class="nav-item" data-section="faq"><span class="icon">❓</span>FAQ</button>
+            <button class="nav-item" data-section="footer"><span class="icon">🔗</span>Footer</button>
+            <button class="nav-item" data-section="about"><span class="icon">👤</span>About + Exp.</button>
+            <button class="nav-item" data-section="analytics"><span class="icon">📊</span>Analytics</button>
+            <button class="nav-item" data-section="messages"><span class="icon">✉️</span>Messages<span class="nav-badge" id="msgBadge" hidden>0</span></button>
+        </div>
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-bottom">
+            <a href="../index.html" target="_blank" class="btn btn-ghost btn-block">View Site ↗</a>
+            <button class="btn btn-danger-ghost btn-block" id="logoutBtn">Log Out</button>
+        </div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <span class="unsaved-pill" id="unsavedPill"><span class="dot"></span>Unsaved changes</span>
+            <button class="btn btn-publish" id="publishBtn">Push to Live Site</button>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <h1 id="sectionTitle">Navbar</h1>
+                <p id="sectionDesc">Logo text and Hire Me button link</p>
+            </div>
+            <div id="sectionBody"></div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="api.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
