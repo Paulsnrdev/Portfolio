@@ -12,10 +12,14 @@ const analyticsRoutes = require('./routes/analytics');
 
 const app = express();
 
+const allowedOrigins = (process.env.CLIENT_ORIGIN || 'http://127.0.0.1:5501')
+  .split(',')
+  .map((origin) => origin.trim());
+
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.CLIENT_ORIGIN || 'http://127.0.0.1:5501'
+    origin: allowedOrigins
   })
 );
 app.use(express.json({ limit: '1mb' }));
