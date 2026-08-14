@@ -2,7 +2,7 @@
 // static markup already in the page. If the backend is unreachable, the
 // hardcoded HTML that's already in the DOM stays as-is — nothing breaks.
 
-const API_BASE = 'http://localhost:4000';
+const API_BASE = 'https://portfolio-myre.onrender.com';
 
 function escapeHtml(str) {
   const div = document.createElement('div');

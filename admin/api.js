@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:4000';
+const API_BASE = 'https://portfolio-myre.onrender.com';
 
 function getToken() {
   return localStorage.getItem('admin_token');
