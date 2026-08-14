@@ -183,14 +183,23 @@ async function handleContactSubmit(e) {
   const email = document.getElementById('cf-email').value;
   const type = document.getElementById('cf-type').value;
   const messageText = document.getElementById('cf-message').value;
+  const fullMessage = `[${type}] ${messageText}`;
 
   btn.disabled = true;
   btn.textContent = 'Sending…';
+
+  // Fire-and-forget email notification via Formspree; the admin panel/DB save below is the source of truth.
+  fetch('https://formspree.io/f/mzepvyvy', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ name, email, message: fullMessage })
+  }).catch(() => {});
+
   try {
     const res = await fetch(API_BASE + '/api/messages', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message: `[${type}] ${messageText}` })
+      body: JSON.stringify({ name, email, message: fullMessage })
     });
     if (!res.ok) throw new Error('Send failed');
     btn.textContent = 'Message sent ✓';

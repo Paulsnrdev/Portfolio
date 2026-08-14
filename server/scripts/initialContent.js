@@ -6,7 +6,7 @@ const { PROJECTS } = require('../../projects-data.js');
 const INITIAL_CONTENT = {
   navbar: {
     logoText: 'Paul Oluwasegun',
-    hireLink: 'paulstackweb@gmail.com'
+    hireLink: 'jibadepaul@gmail.com'
   },
   hero: {
     badge: 'Open to internships, freelance & collaborations',

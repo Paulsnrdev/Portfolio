@@ -1,18 +1,3 @@
-// Theme toggle
-const themeIcon = document.querySelector('.theme-icon');
-
-function toggleTheme() {
-    const isLight = document.body.classList.toggle('light');
-    themeIcon.textContent = isLight ? '🌙' : '☀️';
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
-}
-
-// Apply saved theme on load
-if (localStorage.getItem('theme') === 'light') {
-    document.body.classList.add('light');
-    themeIcon.textContent = '🌙';
-}
-
 // Navbar scroll
 const navbar = document.getElementById('navbar');
 if (navbar) {
