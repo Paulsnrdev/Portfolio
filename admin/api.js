@@ -14,7 +14,7 @@ function clearToken() {
 
 function requireAuthOrRedirect() {
   if (!getToken()) {
-    window.location.href = 'login.html';
+    window.location.href = '/admin/login';
   }
 }
 
@@ -30,7 +30,7 @@ async function api(path, options = {}) {
 
   if (res.status === 401) {
     clearToken();
-    window.location.href = 'login.html';
+    window.location.href = '/admin/login';
     throw new Error('Not authenticated');
   }
 

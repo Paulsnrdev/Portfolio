@@ -440,7 +440,7 @@ els.publishBtn.addEventListener('click', async () => {
 
 document.getElementById('logoutBtn').addEventListener('click', () => {
   clearToken();
-  window.location.href = 'login.html';
+  window.location.href = '/admin/login';
 });
 
 async function init() {

@@ -16,10 +16,10 @@ function setText(id, value) {
 }
 
 function resolveHref(href) {
-  // Footer links are authored for index.html. On other pages, a bare "#section"
-  // link needs to point back at index.html instead of anchoring on the current page.
-  const onIndex = /(^|\/)index\.html$/.test(location.pathname) || location.pathname.endsWith('/');
-  if (!onIndex && href && href.startsWith('#')) return 'index.html' + href;
+  // Footer links are authored for the home page. On other pages, a bare "#section"
+  // link needs to point back at the home page instead of anchoring on the current page.
+  const onIndex = /(^|\/)index\.html$/.test(location.pathname) || location.pathname === '/' || location.pathname.endsWith('/');
+  if (!onIndex && href && href.startsWith('#')) return '/' + href;
   return href;
 }
 

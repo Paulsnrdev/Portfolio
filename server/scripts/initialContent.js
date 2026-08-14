@@ -38,7 +38,7 @@ const INITIAL_CONTENT = {
     links: [
       { label: 'Home', href: '#home' },
       { label: 'About', href: '#about' },
-      { label: 'Projects', href: 'projects.html' },
+      { label: 'Projects', href: '/projects' },
       { label: 'Contact', href: '#contact' }
     ],
     copyright: '© 2026 Ajibade Paul Oluwasegun.'

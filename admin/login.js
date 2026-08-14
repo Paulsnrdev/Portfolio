@@ -1,5 +1,5 @@
 if (getToken()) {
-  window.location.href = 'index.html';
+  window.location.href = '/admin';
 }
 
 const form = document.getElementById('loginForm');
@@ -23,7 +23,7 @@ form.addEventListener('submit', async (e) => {
     const data = await res.json().catch(() => ({}));
     if (!res.ok) throw new Error(data.error || 'Login failed.');
     setToken(data.token);
-    window.location.href = 'index.html';
+    window.location.href = '/admin';
   } catch (err) {
     errorEl.textContent = err.message;
     btn.disabled = false;
