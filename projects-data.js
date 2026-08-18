@@ -186,6 +186,57 @@ const PROJECTS = [
     repo: "https://github.com/Paulsnrdev/AgentAi",
     categories: ["Frontend", "Other"],
     featured: false
+  },
+  {
+    slug: "summit-auto-group",
+    name: "Summit Auto Group",
+    tagline: "Dealership site for new & pre-owned vehicles in Houston, TX",
+    problem: "A car dealership needed a fast, browsable site for inventory, financing, and trade-in requests instead of relying only on third-party listing sites.",
+    role: "Freelance developer",
+    stack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS"],
+    features: [
+      "Vehicle inventory browsing by type with detail pages",
+      "Financing pre-approval and trade-in request forms",
+      "Service & parts and current specials pages"
+    ],
+    live: "https://automobile-website-liart.vercel.app",
+    repo: "https://github.com/Paulsnrdev/automobile-website",
+    categories: ["Frontend", "Other"],
+    featured: false
+  },
+  {
+    slug: "flowpro-plumbing",
+    name: "FlowPro Plumbing",
+    tagline: "Marketing site for a plumbing repair business",
+    problem: "A plumbing business needed a fast, trustworthy site that converts visitors into service calls.",
+    role: "Freelance developer",
+    stack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS"],
+    features: [
+      "Services and past-projects showcase",
+      "Clear calls to action for booking repairs",
+      "Fast, mobile-first marketing pages"
+    ],
+    live: "https://flowpro-plumbing-eight.vercel.app",
+    repo: "https://github.com/Paulsnrdev/flowpro-plumbing",
+    categories: ["Frontend", "Other"],
+    featured: false
+  },
+  {
+    slug: "simply-furniture",
+    name: "Simply Furniture",
+    tagline: "Marketing site for a furniture brand",
+    problem: "A furniture brand needed a clean, browsable site to showcase collections and drive customer inquiries.",
+    role: "Freelance developer",
+    stack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS"],
+    features: [
+      "Shop and collections pages for armchairs, chairs, and sofas",
+      "FAQ, shipping, and returns info for customers",
+      "Accessible UI with reduced-motion support"
+    ],
+    live: "https://simply-furniture.vercel.app",
+    repo: "https://github.com/Paulsnrdev/simply-furniture",
+    categories: ["Frontend", "Other"],
+    featured: false
   }
 ];
 
