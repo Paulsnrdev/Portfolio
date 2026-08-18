@@ -74,6 +74,27 @@ const PROJECTS = [
     featured: true
   },
   {
+    slug: "lumiere-studio",
+    name: "Lumière Studio",
+    tagline: "Award-winning photography studio website — bookings, gallery & portfolio",
+    problem: "Independent photography studios need a fast, elegant online presence to showcase their portfolio and convert visitors into booked sessions, without the cost or overhead of a full CMS or backend.",
+    role: "Frontend Developer",
+    stack: ["HTML", "CSS", "JavaScript", "Formspree"],
+    features: [
+      "Responsive 6-page layout (Home, Gallery, Services, About, Contact, Booking)",
+      "Auto-rotating hero slider with keyboard navigation",
+      "Filterable masonry gallery with swipeable lightbox",
+      "Scroll-reveal animations via IntersectionObserver",
+      "Testimonials carousel",
+      "Client-side validated contact & booking forms (Formspree)",
+      "Clean, extensionless URLs via Vercel rewrites"
+    ],
+    live: "https://lumiere-photos.vercel.app",
+    repo: "https://github.com/Paulsnrdev/Photographyweb",
+    categories: ["Frontend", "Other"],
+    featured: true
+  },
+  {
     slug: "imep",
     name: "IMEP",
     tagline: "Internship logbook, attendance, and grading platform",

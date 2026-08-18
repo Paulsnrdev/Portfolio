@@ -155,6 +155,16 @@ function populateFaq(live) {
     .join('');
 }
 
+function populateProjects(live) {
+  if (!Array.isArray(live.projects) || !live.projects.length) return;
+  if (typeof PROJECTS === 'undefined') return;
+  PROJECTS.length = 0;
+  PROJECTS.push(...live.projects);
+  if (typeof renderFeaturedProjects === 'function') renderFeaturedProjects();
+  if (typeof renderAllProjects === 'function') renderAllProjects();
+  if (typeof initProjectFilters === 'function') initProjectFilters();
+}
+
 function pingAnalytics() {
   fetch(API_BASE + '/api/analytics/view', {
     method: 'POST',
@@ -221,6 +231,7 @@ async function initSiteContent() {
     populateFooter(live);
     populateTestimonials(live);
     populateFaq(live);
+    populateProjects(live);
   } catch {
     // Backend unreachable — the hardcoded content already rendered stays as-is.
   }
