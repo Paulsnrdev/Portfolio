@@ -23,23 +23,6 @@ const PROJECTS = [
     featured: true
   },
   {
-    slug: "pagebuilder",
-    name: "PageBuilder",
-    tagline: "Drag-and-drop landing page builder for small businesses",
-    problem: "Small businesses need a one-page site live fast, without hiring a developer.",
-    role: "Sole developer",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Auth.js", "Cloudinary", "Paystack"],
-    features: [
-      "15 drag-and-drop block types: hero, gallery, pricing, WhatsApp button",
-      "Publish to a subdomain or a custom domain",
-      "Lead capture and Paystack billing"
-    ],
-    live: "https://page-builder-livid.vercel.app",
-    repo: "https://github.com/Paulsnrdev/PageBuilder",
-    categories: ["Full-Stack", "SaaS"],
-    featured: true
-  },
-  {
     slug: "cronvend",
     name: "CronVend",
     tagline: "Automated email sequences that recover lost e-commerce revenue",
@@ -177,22 +160,6 @@ const PROJECTS = [
     featured: false
   },
   {
-    slug: "sales-tracker",
-    name: "Clothing Brand Sales Tracker",
-    tagline: "Daily sales tracker built for CHUNKZ",
-    problem: "Small business owners need a fast way to log daily sales across categories without a POS system.",
-    role: "Founder and developer (built for my own brand)",
-    stack: ["HTML5", "CSS3", "JavaScript"],
-    features: [
-      "Click-to-count tracking across 12 clothing categories",
-      "No login required"
-    ],
-    live: "https://chunkz-monthly-sales-tracker.vercel.app",
-    repo: "https://github.com/Paulsnrdev/Clothing-Brand-Monthly-Sales-Tracker",
-    categories: ["Frontend", "Other"],
-    featured: false
-  },
-  {
     slug: "agentai",
     name: "AgentAI (Concept)",
     tagline: "Marketing site concept for a fictional AI consultancy",
@@ -220,10 +187,10 @@ const PROJECTS = [
       "Financing pre-approval and trade-in request forms",
       "Service & parts and current specials pages"
     ],
-    live: "https://automobile-website-liart.vercel.app",
+    live: "https://automobile-summit.vercel.app/",
     repo: "https://github.com/Paulsnrdev/automobile-website",
     categories: ["Frontend", "Other"],
-    featured: false
+    featured: true
   },
   {
     slug: "flowpro-plumbing",
@@ -237,7 +204,7 @@ const PROJECTS = [
       "Clear calls to action for booking repairs",
       "Fast, mobile-first marketing pages"
     ],
-    live: "https://flowpro-plumbing-eight.vercel.app",
+    live: "https://flowpro-services.vercel.app/",
     repo: "https://github.com/Paulsnrdev/flowpro-plumbing",
     categories: ["Frontend", "Other"],
     featured: false
@@ -258,6 +225,28 @@ const PROJECTS = [
     repo: "https://github.com/Paulsnrdev/simply-furniture",
     categories: ["Frontend", "Other"],
     featured: false
+  },
+  {
+    slug: "security-scanner",
+    name: "Security Scanner",
+    tagline: "Paste a URL, get a full security audit in seconds. No signup required.",
+    problem: "Checking a site's security posture (headers, TLS, DNS, WHOIS, hosting, performance) usually means stitching together several paid tools or manually running checks before every deploy. This gives you all of it from one URL, instantly, plus a gated load-testing feature for domains you have verified you own, safe enough to run publicly without becoming an open DoS tool.\n",
+    role: "Solo Developer",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Upstash Redis", "Undici", "autocannon", "Vercel"],
+    features: [
+      "SSRF-safe URL scanner: security headers, TLS/SSL, DNS, WHOIS, hosting/CDN, performance",
+      "Shareable scan results via permanent links",
+      "Per-browser scan history, no account required",
+      "Domain ownership verification via DNS TXT record or file upload",
+      "Gated load testing, unlocked only for verified domains",
+      "IP-pinned requests to close DNS-rebinding SSRF gaps",
+      "Redis-backed persistence, no relational database",
+      "Per-domain and per-IP rate limiting on public endpoints"
+    ],
+    live: "https://security-scanner-tester.vercel.app",
+    repo: "https://github.com/Paulsnrdev/security-scanner-web",
+    categories: ["Security", "Developer Tools", "Full Stack", "Next.js"],
+    featured: true
   }
 ];
 
