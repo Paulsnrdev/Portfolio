@@ -62,7 +62,7 @@ const INITIAL_CONTENT = {
     education: {
       school: 'Bowen University',
       degree: 'B.Sc. Computer Science',
-      period: '2022 to Present',
+      period: '2022 to 2026',
       coursework: ['Data Management', 'Operating Systems', 'Computer Architecture', 'Compiler Construction', 'Computer Networks']
     }
   }
